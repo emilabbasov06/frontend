@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/Hero';
+import BoostComponent from '../components/BoostComponent';
 import Navbar from '../components/Navbar';
 import Menu from '../components/Menu';
 
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="mp-container">
 
       <Navbar />
-      <Hero />
+      <BoostComponent />
       <Menu />
 
     </div>

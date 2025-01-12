@@ -1,19 +1,17 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './screens/Home';
+import Boost from './screens/Boost';
 
 function App() {
   return (
-    <>
-      <div className='overflow-x-hidden text-neutral-300 antialiased'>
-        <div className='fixed top-0 -z-10 h-full w-full'>
-          <div className='absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'></div>
-        </div>
-
-        <div className='container mx-auto'>
-          <Home />
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="boost" element={<Boost />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
