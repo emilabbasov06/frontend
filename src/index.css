@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden !important;
 }
 
 :root {
@@ -13,13 +14,14 @@
 }
 
 .mp-container {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: hidden;
   gap: 2rem;
+  padding: 1rem;
 }
 
 .mp-box-shadow {
