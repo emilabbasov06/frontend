@@ -1,12 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/boost",
-      "destination": "/boost.html"
+      "source": "/(.*)", "destination": "/"
     }
   ]
 }
