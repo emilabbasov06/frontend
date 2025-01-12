@@ -14,7 +14,7 @@
 }
 
 .mp-container {
-  height: 90vh;
+  height: 92vh;
   display: flex;
   background-color: var(--main-component-bg);
   flex-direction: column;
