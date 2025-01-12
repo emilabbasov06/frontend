@@ -4,16 +4,17 @@ import { IoRocket } from "react-icons/io5";
 import { RiTeamFill } from "react-icons/ri";
 import { SiConvertio } from "react-icons/si";
 import { LuPickaxe } from "react-icons/lu";
+import { NavLink } from 'react-router'
 
 const Menu = () => {
   return (
     <div className="mp-bottom mp-box-shadow">
       <ul>
-        <li><a href="/"><TiHome color='lightgreen' /></a></li>
-        <li><a href="/"><LuPickaxe color='lightblue' /></a></li>
-        <li><a href="/boost"><IoRocket color='darkorange' /></a></li>
-        <li><a href="/"><RiTeamFill color='brown' /></a></li>
-        <li><a href="/"><SiConvertio color='pink' /></a></li>
+        <li><NavLink to="/"><TiHome color='lightgreen' /></NavLink></li>
+        <li><NavLink to="/"><LuPickaxe color='lightblue' /></NavLink></li>
+        <li><NavLink to="/boost"><IoRocket color='darkorange' /></NavLink></li>
+        <li><NavLink to="/"><RiTeamFill color='brown' /></NavLink></li>
+        <li><NavLink to="/"><SiConvertio color='pink' /></NavLink></li>
       </ul>
     </div>
   )
